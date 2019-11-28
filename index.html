@@ -1,7 +1,9 @@
-  <!DOCTYPE html>
-  <html>
-    <head>
- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
@@ -14,7 +16,7 @@
     <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="red">
     <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="black">
+    <meta name="msapplication-navbutton-color" content="red">
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -22,6 +24,7 @@
     img {
         filter: brightness(0.85);
     }
+
     #uploader {
         -webkit-appearence: none;
         appearance: none;
@@ -29,29 +32,12 @@
         margin-bottom: 10px;
     }
     </style>
-    </head>
-    <body>
-      
- 
+</head>
+
+<body style="background-color: #D32E5EFF;">
+    <nav style="background-color: #AE0E36FF;">
         <div class="nav-wrapper">
-            <a href="./index.html" class="brand-logo">One piece</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-                <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-                <li>
-                    <a href="pages/sobre.html">Sobre Nós</a>
-                </li>
-                <li>
-                    <a href="pages/contato.html">Contato</a>
-                </li>
-            </ul>
-        </div>
-    
-<body style="background-color: #00008B;">
-    <nav style="background-color: ##0000CD;">
-        <div class="nav-wrapper">
-            <a href="./index.html" class="brand-logo">One Piece</a>
+            <a href="./index.html" class="brand-logo">Bonbons</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                 <i class="material-icons">menu</i>
             </a>
@@ -73,14 +59,35 @@
             <a href="pages/contato.html">Contato</a>
         </li>
     </ul>
-    <div class="container-fluid"
-  
- <script>
-  <type="text/java">
-  
-   <script type="text/javascript>
-  src="./js/ui.js"></scipt>
-  </script>
+    <div class="container-fluid">
+        <!-- inicio container -->
+        <div class="row sobremesas">
+            <!-- inicio row-->
+        </div><!-- fim do row -->
+    </div><!-- fim do container-->
+    <div class="center">
+        <a class="btn-floating btn-small btn-large add-btn sidenav-trigger" data-target="side-form">
+            <i class="material-icons">add</i>
+        </a>
+    </div>
+    <div id="side-form" class="sidenav side-form">
+        <!-- formulario para adicionar sobremesas-->
+        <form class="adiciona-sobremesa container section">
+            <h6>Nova Sobremesa</h6>
+            <div class="divider"></div>
+            <div class="input-field">
+                <input placeholder="ex. Brownie com Doce de leite" id="sobremesaTitulo" type="text" class="validate">
+                <label for="sobremesaTitulo">Título da Sobremesa</label>
+            </div>
+            <div class="input-field">
+                <input placeholder="Massa de chocolate meio-amargo e doce de leite argentino" id="sobremesaDescricao" type="text" class="validate">
+                <label for="sobremesaDescricao">Descrição da Sobremesa</label>
+            </div>
+            <div class="input-field">
+                <progress value="0" max="100" id="uploader">0%</progress>
+                <input type="file" id="fileButton" name="sobremesaArquivo" />
+                <br>
+            </div>
     </body>
   </html>
  <body bgcolor="#000000">
